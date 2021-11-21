@@ -1,0 +1,64 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+@font-face {
+  font-family: "Avenir-Heavy";
+  src: url("../fonts/Avenir-Heavy.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Avenir-Medium";
+  src: url("../fonts/Avenir-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Avenir-Light";
+  src: url("../fonts/Avenir-Light.ttf") format("truetype");
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 10px/16px = 62.5% -> 1rem = 10px
+
+  @media only screen and (max-width: $bp-largest) {
+    font-size: 50%;
+  }
+}
+
+body {
+  font-family: "Avenir-Medium", sans-serif;
+  color: #000;
+  font-weight: 300;
+  line-height: 1.6;
+  background-color: #fafafa;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Avenir-Heavy", sans-serif;
+  color: #000;
+}
+p {
+  color: #777777;
+  font-family: Avenir-Medium;
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  line-height: 1.2;
+}
+.mb-medium {
+  margin-bottom: 3rem;
+}
+h1 {
+  @media only screen and (max-width: $bp-medium) {
+    font-size: 2.1rem;
+  }
+}
